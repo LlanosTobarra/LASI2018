@@ -1,0 +1,229 @@
+PUT twitter-uned
+{
+  "mappings": {
+    "tweet":{
+        "properties": {
+            "coordinates": {
+                "type": "geo_shape"
+            },
+            "created_at": {
+                "format": "EEE MMM dd HH:mm:ss Z YYYY",
+                "type": "date"
+            },
+            "entities": {
+                "properties": {
+                    "hashtags": {
+                        "properties": {
+                            "indices": {
+                                "type": "long"
+                            },
+                            "text": {
+                                "type": "text"
+                            }
+                        }
+                    },
+                    "urls": {
+                        "properties": {
+                            "display_url": {
+                                "type": "text"
+                            },
+                            "expanded_url": {
+                                "type": "text"
+                            },
+                            "indices": {
+                                "type": "long"
+                            },
+                            "url": {
+                                "type": "text"
+                            }
+                        }
+                    }
+                }
+            },
+            "favorite_count": {
+                "type": "long"
+            },
+            "favorited": {
+                "type": "boolean"
+            },
+            "filter_level": {
+                "type": "text"
+            },
+            "geo": {
+                "type": "geo_shape"
+            },
+            "id": {
+                "type": "long"
+            },
+            "id_str": {
+                "type": "text"
+            },
+            "lang": {
+                "type": "text"
+            },
+            "place": {
+                "properties": {
+                    "attributes": {
+                        "type": "object"
+                    },
+                    "bounding_box": {
+                        "type": "text"
+                    },
+                    "country": {
+                          "type": "text"
+                    },
+                    "country_code": {
+                        "type": "text"
+                    },
+                    "full_name": {
+                        "type": "text"
+                    },
+                    "id": {
+                        "type": "text"
+                    },
+                    "name": {
+                        "type": "text"
+                    },
+                    "place_type": {
+                        "type": "text"
+                    },
+                    "url": {
+                        "type": "text"
+                    }
+                }
+            },
+            "possibly_sensitive": {
+                "type": "boolean"
+            },
+            "retweet_count": {
+                "type": "long"
+            },
+            "retweeted": {
+                "type": "boolean"
+            },
+            "source": {
+                "type": "text"
+            },
+            "text": {
+                "type": "text"
+            },
+            "timestamp_ms": {
+                "type": "date"
+            },
+            "truncated": {
+                "type": "boolean"
+            },
+            "user": {
+                "properties": {
+                    "contributors_enabled": {
+                        "type": "boolean"
+                    },
+                    "created_at": {
+                        "format": "EEE MMM dd HH:mm:ss Z YYYY",
+                        "type": "date"
+                    },
+                    "default_profile": {
+                        "type": "boolean"
+                    },
+                    "default_profile_image": {
+                        "type": "boolean"
+                    },
+                    "description": {
+                        "type": "text"
+                    },
+                    "favourites_count": {
+                        "type": "long"
+                    },
+                    "followers_count": {
+                        "type": "long"
+                    },
+                    "friends_count": {
+                        "type": "long"
+                    },
+                    "geo_enabled": {
+                        "type": "boolean"
+                    },
+                    "id": {
+                        "type": "long"
+                    },
+                    "id_str": {
+                        "type": "text"
+                    },
+                    "is_translator": {
+                        "type": "boolean"
+                    },
+                    "lang": {
+                        "type": "text"
+                    },
+                    "listed_count": {
+                        "type": "long"
+                    },
+                    "location": {
+                        "type": "text"
+                    },
+                    "name": {
+                        "type": "text"
+                    },
+                    "profile_background_color": {
+                        "type": "text"
+                    },
+                    "profile_background_image_url": {
+                        "type": "text"
+                    },
+                    "profile_background_image_url_https": {
+                        "type": "text"
+                    },
+                    "profile_background_tile": {
+                        "type": "boolean"
+                    },
+                    "profile_banner_url": {
+                        "type": "text"
+                    },
+                    "profile_image_url": {
+                        "type": "text"
+                    },
+                    "profile_image_url_https": {
+                        "type": "text"
+                    },
+                    "profile_link_color": {
+                        "type": "text"
+                    },
+                    "profile_sidebar_border_color": {
+                        "type": "text"
+                    },
+                    "profile_sidebar_fill_color": {
+                        "type": "text"
+                    },
+                    "profile_text_color": {
+                        "type": "text"
+                    },
+                    "profile_use_background_image": {
+                        "type": "boolean"
+                    },
+                    "protected": {
+                        "type": "boolean"
+                    },
+                    "screen_name": {
+                        "type": "text"
+                    },
+                    "statuses_count": {
+                        "type": "long"
+                    },
+                    "time_zone": {
+                        "type": "text"
+                    },
+                    "url": {
+                        "type": "text"
+                    },
+                    "utc_offset": {
+                        "type": "long"
+                    },
+                    "verified": {
+                        "type": "boolean"
+                    }
+                }
+            }
+        }
+    }
+ }
+}
