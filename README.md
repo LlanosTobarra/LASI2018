@@ -1,4 +1,4 @@
-# Workshop Data analysis with Elasticsearch and Kibana
+# Workshop:  "Data analysis with Elasticsearch and Kibana"
 LASI 2018 - 18-19 June León
 
 The following repository contains materials for the Workshop 
