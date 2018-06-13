@@ -21,11 +21,6 @@ First dataset is based on xAPI data dedicated to predict student's academic perf
 
 - Amrieh, E. A., Hamtini, T., & Aljarah, I. (2015, November). Preprocessing and analyzing educational data set using X-API for improving student's performance. In Applied Electrical Engineering and Computing Technologies (AEECT), 2015 IEEE Jordan Conference on (pp. 1-5). IEEE.
 
-This dataset can be downloaded from Kaggle in the following link: https://www.kaggle.com/aljarah/xAPI-Edu-Data/version/2
+Second dataset has been generated using the following script: https://github.com/jiscdev/lakhak
 
-Second dataset is Open University Learning Analytics dataset:
- -Kuzilek J., Hlosta M., Zdrahal Z. Open University Learning Analytics dataset Sci. Data 4:170171 doi: 10.1038/sdata.2017.171 (2017).
-
-This dataset is available in the following link: https://analyse.kmi.open.ac.uk/open_dataset
-
-Last dataset has been generated using the following script: https://github.com/jiscdev/lakhak
+Additionally, some twitter data is charged.
