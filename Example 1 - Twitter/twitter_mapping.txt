@@ -1,4 +1,4 @@
-PUT twitter-uned
+PUT lasi2018-uned
 {
   "mappings": {
     "tweet":{

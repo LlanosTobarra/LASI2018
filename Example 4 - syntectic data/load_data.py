@@ -2,6 +2,9 @@ import pandas as pd
 import json
 from elasticsearch import Elasticsearch
 
+username="elastic"
+password="Pssmdc3otlRjjxYlNe23"
+
 '''
 El objetivo de este script es cargar en ElasticSearch el excel ejemplo. Nos servirá como base para
 trabajar.
@@ -9,7 +12,7 @@ El fichero que queremos cargar está en formato excel, tenemos que pasarlo a JSO
 nos apoyamos en pandas.
 '''
 #Abrimos el fichero
-data=pd.read_csv("out2.csv",sep=',')
+df=pd.read_csv("out2.csv",sep=',')
 #cogemos la hoja del excel
 
 print("Open file")
@@ -19,7 +22,8 @@ tmp=df.to_json(orient='records')
 print("File to JSON")
 
 #conexión al cluster de Elasticsearh
-es = Elasticsearch([{'host': 'localhost', 'port': 9200}])
+es = Elasticsearch(['localhost'],http_auth=(username,password),port=9200,)
+#es=Elasticsearch(['localhost'],port=9200)
 print("Connected to ElasticSearch")
 print(es.info())
 #cargamos de uno en uno
@@ -28,6 +32,6 @@ print("Start loading")
 i=0
 for doc in df_json:
     print(i)
-    es.index(index="LASI2018-lak17", doc_type="registry",body=doc)
+    es.index(index="lasi2018-lak17", doc_type="registry",body=doc)
     i=i+1
 print("Ended")

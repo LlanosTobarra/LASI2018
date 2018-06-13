@@ -33,7 +33,7 @@ class StreamWriter(tweepy.StreamListener):
     def on_data(self, data):
         try:
             print(data)
-            self.es.index(index="twitter-{0}".format(self.topic_name), doc_type="tweet",body=json.loads(data))
+            self.es.index(index="LASI2018-{0}".format(self.topic_name), doc_type="tweet",body=json.loads(data))
         except Exception as e:
             print("Excepción durante la ejecución {0}".format(e))
         return True
