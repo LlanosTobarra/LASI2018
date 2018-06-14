@@ -1,5 +1,6 @@
 # Workshop:  "Data analysis with Elasticsearch and Kibana"
-<cente>![UNED](http://portal.uned.es/NUEVOWEB/IMAGENES/logo_uned.gif)![SCC](https://www.scc.uned.es/iconos/Logo_SCC.png)</center>
+<center>![UNED](http://portal.uned.es/NUEVOWEB/IMAGENES/logo_uned.gif)![SCC](https://www.scc.uned.es/iconos/Logo_SCC.png)</center>
+
 LASI 2018 - 18-19 June León (https://lasi18.snola.es/)
 
 The following repository contains materials for the Workshop 
