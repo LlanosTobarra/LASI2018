@@ -1,7 +1,7 @@
 # Workshop:  "Data analysis with Elasticsearch and Kibana"
 <p align="center">
-  <img src="http://portal.uned.es/NUEVOWEB/IMAGENES/logo_uned.gif">
-  <img src="https://www.scc.uned.es/iconos/Logo_SCC.png"/>
+  <img src="http://portal.uned.es/NUEVOWEB/IMAGENES/logo_uned.gif" height="50"/>
+  <img src="https://www.scc.uned.es/iconos/Logo_SCC.png" height="50"/>
   <img src="https://snola.es/wp-content/uploads/2016/04/SNOLA_-2.png" height="50" />                                                        
 </p>
 
