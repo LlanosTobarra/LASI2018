@@ -11,7 +11,7 @@ The following repository contains materials for the Workshop
 
 ## Initial instructions
 
-The basic platform for Windows computers can be downloaded from the following link: https://goo.gl/utXp5v
+The basic platform for Windows computers can be downloaded from the following link: https://goo.gl/tLimsm
 You need to have installed lasted version of Java Software Developers Kit. You can obtained from the following link:
 If you prefer install everything from zero at the docs folders there is a setup.pdf with details.
 
